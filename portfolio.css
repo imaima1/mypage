@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+  
+a {
+  text-decoration: none;
+}
+  
+.clear {
+  clear: both;
+}
+
+.fadein {
+	opacity : 0.1;
+	transform : translate(0, 50px);
+	transition : all 1000ms;
+}
+
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+  
+.container p {
+  font-size: 16px;
+}
+
+
+
+.favicon{
+        border-radius: 50%;
+}
+
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: rgba(217, 242, 247, 0.7);
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-left p {
+  padding-bottom: 5px;
+  font-size: x-large;
+  font-style:oblique;
+  font-family:Times New Roman,"ＭＳ Ｐゴシック";
+}
+
+.header-right {
+  height: 50px;
+  float: right;
+}
+
+.header-right li {
+  padding:0 15px;
+  display: inline-block;
+  font-size: larger;
+}
+
+.header-right li a {
+  color: rgb(0, 0, 0);
+}
+
+#menu-icon {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+
+
+  
+.home {
+  padding: 180px 0 100px 0;
+  height: 600px;
+  background-image: url(./image/sendai.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 0 #000,
+              -1px 1px 0 #000,
+              1px -1px 0 #000,
+              -1px -1px 0 #000;
+}
+  
+.top-wrapper h1 {
+  font-style:oblique;
+  font-family:Times New Roman,"ＭＳ Ｐゴシック";
+  opacity: 1;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p {
+  opacity: 1;
+  font-size: x-large;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+
+
+
+
+
+.about {
+  height: auto;
+  height: auto;
+  padding: 80px 0px;
+  text-align: center;
+  background-image: url(./image/sakura.jpg);
+  background-color: rgba(255, 255, 255, 0.2);
+  background-blend-mode: lighten;
+  background-size: cover;
+}
+
+.about-container {
+  float: left;
+  width: 50%;
+}
+
+#my-img {
+  border-radius: 30px;
+}
+
+.about-hide {
+  display: none;
+}
+
+
+.about-left {
+  text-align: center;
+}
+
+.about-right {
+  text-align: left;
+  padding-left: 10px;
+}
+
+
+
+
+
+
+.skills {
+  height: auto;
+  padding-bottom: 80px;
+  text-align: center;
+  background-image: url(./image/prog_image.jpg);
+  background-color: rgba(255, 255, 255, 0.2);
+  background-blend-mode: lighten;
+  background-size: cover;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.heading h1 {
+  color: white;
+  font-size: 53px;
+  font-weight: normal;
+}
+
+.my_skills {
+  color: white;
+}
+
+.top, .bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.my_skill {
+  width: 25%;
+}
+
+.my_skill-icon img{
+  border-radius: 20px;
+}
+
+.my_skill-icon p {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow:1px 1px 0 rgb(8, 8, 8),-1px 1px 0 rgb(3, 3, 3),1px -1px 0 rgb(7, 7, 7),-1px -1px 0 rgb(7, 7, 7);
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 12px;
+  text-shadow:1px 1px 0 rgb(8, 8, 8),-1px 1px 0 rgb(3, 3, 3),1px -1px 0 rgb(7, 7, 7),-1px -1px 0 rgb(7, 7, 7);
+}
+
+.heading h1 {
+  font-weight: normal;
+}
+
+
+.works {
+  height: auto;
+  padding-bottom: 80px;
+  text-align: center;
+  background-image: url(./image/cafe_desk.png);
+  background-color: rgba(255, 255, 255, 0.2);
+  background-blend-mode: lighten;
+  background-size: cover;
+}
+
+.works {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.my-works {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color: white;
+}
+
+.work {
+  width: 33.3%;
+}
+
+.my_work-icon img{
+  border-radius: 20px;
+}
+
+.my_work-icon p {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow:1px 1px 0 rgb(8, 8, 8),-1px 1px 0 rgb(3, 3, 3),1px -1px 0 rgb(7, 7, 7),-1px -1px 0 rgb(7, 7, 7);
+}
+
+.works-head h1 {
+  color: #1a7940;
+}
+
+
+
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  color: #69636b;
+  font-size: 12px;
+}
+
